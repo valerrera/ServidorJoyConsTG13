@@ -1,0 +1,22 @@
+# Tabla fija de Joy-Cons: cada uno recibe SIEMPRE el mismo número de sensor,
+# sin importar el orden en que se conecten ni si falta alguno.
+#
+# Formato:  código   sensor   nombre (opcional, solo para mostrar)
+# El código es el que el servidor muestra entre paréntesis. Las líneas que
+# empiezan con # se ignoran. Este mismo archivo sirve en los dos PCs: cada
+# servidor usa solo los Joy-Cons que tiene conectados.
+#
+# En Unity: PC 1 = Server Host (sensores 0-3); PC 2 = Additional Server con
+# Sensor Offset 4 (sus sensores 0-3 pasan a ser 4-7).
+
+# ---- PC 1: tronco + lado izquierdo ----
+dc68eb802c3d   0   TRONCO
+98e2555eada9   1   BRAZO_IZQ
+dc68eb7e9528   2   MUSLO_IZQ
+98e2555e9aed   3   PIERNA_IZQ
+
+# ---- PC 2: pelvis + lado derecho (en Unity: sensores 4-7) ----
+e0f6b519a6eb   0   PELVIS
+7048f7b9f837   1   BRAZO_DER
+e0f6b5199627   2   MUSLO_DER
+7048f7ba0c41   3   PIERNA_DER
